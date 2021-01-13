@@ -17,7 +17,9 @@ add_subdirectory(external/fmt)
 
 if (cppray_BUILD_TESTS)
   add_subdirectory(external/googletest)
+  set(INSTALL_GTEST OFF)
 endif()
+
 if (cppray_BUILD_PYTHON_BINDINGS)
   add_subdirectory(external/pybind11)
 endif()

@@ -1,5 +1,6 @@
 
 
+add_compile_options(-Wall -Wextra -Wpedantic)
 
 add_library(ray STATIC
   ray/geo/tuple.cpp)
