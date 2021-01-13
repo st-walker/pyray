@@ -25,6 +25,11 @@ public:
   double z() const { return z_; }
   double w() const { return w_; }
 
+  void x(double x) {  x_ = x; }
+  void y(double y) {  y_ = y; }
+  void z(double z) {  z_ = z; }
+  void w(double w) {  w_ = w; }
+
   bool is_point() { return w() == 1.0; }
   bool is_vector() { return w() == 0.0; }
 

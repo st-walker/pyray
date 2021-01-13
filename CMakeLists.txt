@@ -22,4 +22,5 @@ endif()
 
 if (cppray_BUILD_PYTHON_BINDINGS)
   add_subdirectory(external/pybind11)
+  add_subdirectory(extras/python)
 endif()
