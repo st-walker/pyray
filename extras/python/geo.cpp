@@ -1,7 +1,7 @@
 #include <pybind11/pybind11.h>
 #include <fmt/core.h>
 
-#include "geo/tuple.hpp"
+#include "ray/tuple.hpp"
 
 namespace py = pybind11;
 
