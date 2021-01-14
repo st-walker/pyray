@@ -4,7 +4,7 @@
 #include "tuple.hpp"
 
 using namespace testing;
-using namespace ray::geo;
+using namespace ray;
 
 TEST(Tuple, PointConstruction) {
   Tuple t(4.3, -4.2, 3.1, 1.0);

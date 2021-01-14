@@ -3,7 +3,6 @@
 #include <cmath>
 
 namespace ray {
-namespace geo {
 
 Tuple Point(double x, double y, double z) { return Tuple(x, y, z, 1.0); }
 
@@ -54,5 +53,4 @@ std::ostream &operator<<(std::ostream &os, const Tuple &t) {
   return os << "<Tuple: (" << t.x() << ", " << t.y() << ", " << t.z() << ", "
             << t.w() << ")>";
 }
-} // namespace geo
 } // namespace ray

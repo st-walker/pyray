@@ -1,10 +1,9 @@
-#ifndef TUPLE_H
-#define TUPLE_H
+#ifndef RAY_TUPLE_HPP
+#define RAY_TUPLE_HPP
 
 #include <ostream>
 
 namespace ray {
-namespace geo {
 class Tuple;
 
 double magnitude(Tuple const &);
@@ -50,7 +49,6 @@ private:
   double w_;
 };
 
-} // namespace geo
 } // namespace ray
 
-#endif /* TUPLE_H */
+#endif /* RAY_TUPLE_HPP */

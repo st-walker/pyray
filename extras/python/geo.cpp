@@ -5,7 +5,7 @@
 
 namespace py = pybind11;
 
-using namespace ray::geo;
+using namespace ray;
 
 PYBIND11_MODULE(geo, m) {
   m.doc() = "geo module documentation!";
