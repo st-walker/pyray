@@ -5,6 +5,7 @@ add_compile_options(-Wall -Wextra -Wpedantic)
 add_library(ray STATIC
   ray/tuple.cpp
   ray/colour.cpp
+  ray/canvas.cpp
   )
 
 
@@ -16,6 +17,7 @@ if (cppray_BUILD_TESTS)
     unit_tests
     ray/tuple.test.cpp
     ray/colour.test.cpp
+    ray/canvas.test.cpp
     )
 
   target_link_libraries(
