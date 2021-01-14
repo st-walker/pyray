@@ -3,7 +3,9 @@
 add_compile_options(-Wall -Wextra -Wpedantic)
 
 add_library(ray STATIC
-  ray/tuple.cpp)
+  ray/tuple.cpp
+  ray/colour.cpp
+  )
 
 
 if (cppray_BUILD_TESTS)
@@ -12,7 +14,9 @@ if (cppray_BUILD_TESTS)
   include(GoogleTest)
   add_executable(
     unit_tests
-    ray/tuple.test.cpp)
+    ray/tuple.test.cpp
+    ray/colour.test.cpp
+    )
 
   target_link_libraries(
     unit_tests
