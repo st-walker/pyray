@@ -10,8 +10,8 @@ public:
   Colour(double r, double g, double b) : rgba_(r, g, b, 1.) {}
 
   double red() const { return rgba_.x(); }
-  double green() const { return rgba_.z(); }
-  double blue() const { return rgba_.y(); }
+  double green() const { return rgba_.y(); }
+  double blue() const { return rgba_.z(); }
 
   Colour operator+(Colour const &) const;
   Colour operator-(Colour const &) const;

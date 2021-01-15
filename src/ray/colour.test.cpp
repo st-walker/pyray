@@ -17,8 +17,8 @@ TEST(Colour, ColourConstruction) {
   Colour c(1, 0.4, 3);
 
   ASSERT_THAT(c.red(), Eq(1));
-  ASSERT_THAT(c.blue(), Eq(0.4));
-  ASSERT_THAT(c.green(), Eq(3));
+  ASSERT_THAT(c.green(), Eq(0.4));
+  ASSERT_THAT(c.blue(), Eq(3));
 }
 
 TEST(Colour, ColourAddition) {
