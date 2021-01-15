@@ -6,7 +6,11 @@ add_library(ray STATIC
   ray/tuple.cpp
   ray/colour.cpp
   ray/canvas.cpp
+  ray/ppm.cpp
   )
+
+target_link_libraries(ray
+  PRIVATE fmt)
 
 
 if (cppray_BUILD_TESTS)
@@ -18,13 +22,18 @@ if (cppray_BUILD_TESTS)
     ray/tuple.test.cpp
     ray/colour.test.cpp
     ray/canvas.test.cpp
+    ray/ppm.test.cpp
     )
 
   target_link_libraries(
     unit_tests
+    PUBLIC
     gtest
     gmock_main
-    ray)
+    ray
+    PRIVATE
+    fmt
+    )
 
   gtest_discover_tests(unit_tests)
 endif()
