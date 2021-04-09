@@ -7,6 +7,7 @@ add_library(ray STATIC
   ray/colour.cpp
   ray/canvas.cpp
   ray/ppm.cpp
+  ray/matrix.cpp
   )
 
 target_link_libraries(ray
@@ -23,6 +24,7 @@ if (cppray_BUILD_TESTS)
     ray/colour.test.cpp
     ray/canvas.test.cpp
     ray/ppm.test.cpp
+    ray/matrix.test.cpp
     )
 
   target_link_libraries(

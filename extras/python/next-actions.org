@@ -1,0 +1,9 @@
+
+
+
+ - Understand why compiled bindings are for python3.8 and not python3.7.
+ - start a setup.py (using known cmake example)
+ - tests for the python bindings.
+ - Return to matrix.hpp so that the dimension of the array can be directly
+   computed from the dimension of the initializer_list.
+   - https://medium.com/@johan.mabille/how-we-wrote-xtensor-3-n-the-constructors-65a177260638a
